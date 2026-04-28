@@ -6,15 +6,15 @@ import Image from "next/image";
 import { FiAward, FiBookOpen, FiCode, FiCpu } from "react-icons/fi";
 
 const certifications = [
-  { id: 1, title: "Professional Certificate", issuer: "Tech Institute", date: "2023", image: "/assest/certificate 1.jpeg" },
-  { id: 2, title: "Software Engineering", issuer: "Global Academy", date: "2023", image: "/assest/certificate 2.jpeg" },
-  { id: 3, title: "Full Stack Mastery", issuer: "Dev University", date: "2023", image: "/assest/certificate 3.jpeg" },
-  { id: 4, title: "Cloud Architecture", issuer: "Cloud Pros", date: "2023", image: "/assest/Certificate 4.jpeg" },
-  { id: 5, title: "UI/UX Design", issuer: "Design Hub", date: "2023", image: "/assest/certificate 5.jpeg" },
-  { id: 6, title: "Data Structures", issuer: "Code School", date: "2024", image: "/assest/certificate 6.jpeg" },
-  { id: 7, title: "Advanced React", issuer: "Web Academy", date: "2024", image: "/assest/certificate 7.jpeg" },
-  { id: 8, title: "Machine Learning", issuer: "AI Lab", date: "2024", image: "/assest/certificate 8.jpeg" },
-  { id: 9, title: "System Design", issuer: "Arch Tech", date: "2024", image: "/assest/certificate 9.jpeg" },
+  { id: 1, title: "Venture Craft Organizer", issuer: "Oriental Institute (OIST)", date: "Nov 2025", image: "/assest/certificate 1.jpeg" },
+  { id: 2, title: "TechAcme Coding Competition", issuer: "IEEE / OIST Bhopal", date: "Apr 2025", image: "/assest/certificate 2.jpeg" },
+  { id: 3, title: "CODE-2K26 Conference", issuer: "IEEE / Oriental Institute", date: "Apr 2026", image: "/assest/certificate 3.jpeg" },
+  { id: 4, title: "Smart Samadhan Organizing", issuer: "IEEE / ACM OIST", date: "Mar 2026", image: "/assest/Certificate 4.jpeg" },
+  { id: 5, title: "Google Solution Challenge", issuer: "GDG On Campus", date: "2025", image: "/assest/certificate 5.jpeg" },
+  { id: 6, title: "Generative AI Completion", issuer: "Google Cloud / Simplilearn", date: "Dec 2025", image: "/assest/certificate 6.jpeg" },
+  { id: 7, title: "Samadhan 2.0 Hackathon", issuer: "SISTec Bhopal", date: "Sep 2025", image: "/assest/certificate 7.jpeg" },
+  { id: 8, title: "Job-Ready Hackathon", issuer: "Sheryians Coding School", date: "Jul 2025", image: "/assest/certificate 8.jpeg" },
+  { id: 9, title: "Hack O Spider", issuer: "VGI Greater Noida (Unstop)", date: "2024", image: "/assest/certificate 9.jpeg" },
 ];
 
 export default function AboutPage() {
@@ -112,11 +112,11 @@ export default function AboutPage() {
                 </li>
                 <li className="flex justify-between border-b border-zinc-800 pb-3">
                   <span>Experience</span>
-                  <span className="text-zinc-200">3+ Years</span>
+                  <span className="text-zinc-200">1 Year</span>
                 </li>
                 <li className="flex justify-between border-b border-zinc-800 pb-3">
                   <span>Projects</span>
-                  <span className="text-zinc-200">20+ Done</span>
+                  <span className="text-zinc-200">5 Done</span>
                 </li>
                 <li className="flex justify-between">
                   <span>Availability</span>
@@ -134,7 +134,7 @@ export default function AboutPage() {
             <div className="p-8 bg-zinc-900/40 border border-zinc-800 rounded-3xl hover:border-blue-500/30 transition-colors">
               <FiBookOpen className="w-8 h-8 text-blue-500 mb-4" />
               <h3 className="text-xl font-bold text-white mb-2">Education</h3>
-              <p className="text-zinc-500 text-sm leading-relaxed">Bachelor of Technology in Computer Science from OIST Bhopal.</p>
+              <p className="text-zinc-500 text-sm leading-relaxed">Bachelor of Technology in Computer Science & Business System from OIST Bhopal.</p>
             </div>
             <div className="p-8 bg-zinc-900/40 border border-zinc-800 rounded-3xl hover:border-purple-500/30 transition-colors">
               <FiAward className="w-8 h-8 text-purple-500 mb-4" />

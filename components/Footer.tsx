@@ -1,7 +1,7 @@
 "use client";
 
 import Link from "next/link";
-import { FaGithub, FaLinkedin, FaTwitter, FaInstagram } from "react-icons/fa";
+import { FaGithub, FaLinkedin, FaTwitter, FaInstagram, FaGooglePlay } from "react-icons/fa";
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
@@ -31,6 +31,10 @@ export default function Footer() {
               </a>
               <a href="https://www.instagram.com/raj12_155" target="_blank" rel="noopener noreferrer" className="p-3 bg-zinc-900/50 text-zinc-400 hover:text-white rounded-xl transition-all hover:scale-110">
                 <FaInstagram className="w-5 h-5" />
+              </a>
+              <a href="https://play.google.com/store/apps/details?id=com.ayushkumar.osmedia" target="_blank" rel="noopener noreferrer" className="px-4 py-3 bg-zinc-900/50 text-zinc-400 hover:text-green-500 rounded-xl transition-all hover:scale-105 flex items-center gap-2 group" title="Get it on Google Play">
+                <FaGooglePlay className="w-5 h-5 group-hover:scale-110 transition-transform" />
+                <span className="text-xs font-bold uppercase tracking-widest">App Download</span>
               </a>
             </div>
           </div>
