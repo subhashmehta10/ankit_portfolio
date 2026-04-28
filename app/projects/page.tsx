@@ -82,6 +82,22 @@ const participations = [
     date: "2023",
     description: "Led the development branch for the college's annual tech symposium website and registration portal.",
     highlight: "Lead Organizer"
+  },
+  {
+    id: 4,
+    event: "Coding Competitions",
+    role: "Coordinator/Organizer",
+    date: "2024",
+    description: "Successfully conducted and managed various technical coding rounds and competitive programming contests.",
+    highlight: "Technical Lead"
+  },
+  {
+    id: 5,
+    event: "Tech Event Organizing",
+    role: "Lead Organizer",
+    date: "2024-2025",
+    description: "Planned and executed large-scale technical events, workshops, and symposiums at OIST Bhopal.",
+    highlight: "Management Lead"
   }
 ];
 
