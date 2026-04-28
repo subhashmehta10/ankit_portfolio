@@ -23,13 +23,13 @@ export default function Footer() {
               <a href="#" className="p-3 bg-zinc-900/50 text-zinc-400 hover:text-white rounded-xl transition-all hover:scale-110">
                 <FaGithub className="w-5 h-5" />
               </a>
-              <a href="#" className="p-3 bg-zinc-900/50 text-zinc-400 hover:text-white rounded-xl transition-all hover:scale-110">
+              <a href="https://www.linkedin.com/in/ankit-kumar-583bb0325" target="_blank" rel="noopener noreferrer" className="p-3 bg-zinc-900/50 text-zinc-400 hover:text-white rounded-xl transition-all hover:scale-110">
                 <FaLinkedin className="w-5 h-5" />
               </a>
               <a href="#" className="p-3 bg-zinc-900/50 text-zinc-400 hover:text-white rounded-xl transition-all hover:scale-110">
                 <FaTwitter className="w-5 h-5" />
               </a>
-              <a href="#" className="p-3 bg-zinc-900/50 text-zinc-400 hover:text-white rounded-xl transition-all hover:scale-110">
+              <a href="https://www.instagram.com/raj12_155" target="_blank" rel="noopener noreferrer" className="p-3 bg-zinc-900/50 text-zinc-400 hover:text-white rounded-xl transition-all hover:scale-110">
                 <FaInstagram className="w-5 h-5" />
               </a>
             </div>

@@ -50,7 +50,7 @@ export default function About() {
             {/* Buttons */}
             <div className="mt-10 flex flex-wrap gap-4">
               <a 
-                href="/resume.pdf" 
+                href="/assest/ANKIT.pdf" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="px-8 py-3 bg-black dark:bg-white text-white dark:text-black rounded-lg font-bold hover:scale-105 transition-all shadow-lg text-center min-w-[160px]"

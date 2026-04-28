@@ -64,7 +64,7 @@ export default function Navbar() {
         {/* Action Button (Right) */}
         <div className="flex-1 flex justify-end items-center gap-4">
           <a
-            href="/resume.pdf"
+            href="/assest/ANKIT.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="hidden md:block px-6 py-2.5 text-xs font-black uppercase tracking-widest text-white bg-black dark:bg-white dark:text-black rounded-full hover:scale-105 transition-all shadow-lg"
@@ -120,7 +120,7 @@ export default function Navbar() {
             </Link>
           ))}
           <a
-            href="/resume.pdf"
+            href="/assest/ANKIT.pdf"
             target="_blank"
             rel="noopener noreferrer"
             className="px-6 py-3 mt-2 text-base font-medium text-white bg-black dark:bg-white dark:text-black rounded-full hover:bg-zinc-800 dark:hover:bg-zinc-200 transition-colors"

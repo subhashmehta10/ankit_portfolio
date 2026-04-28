@@ -8,43 +8,80 @@ import { FiGithub, FiExternalLink, FiArrowRight } from "react-icons/fi";
 const projects = [
   {
     id: 1,
-    title: "E-Commerce Ultra",
-    description: "A high-performance e-commerce platform with real-time inventory and AI-driven recommendations.",
-    image: "https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&q=80&w=1000",
-    tags: ["Next.js", "TypeScript", "Tailwind", "Stripe"],
+    title: "Smart Waste Segregation",
+    description: "An automated waste management system using IoT sensors and ML models to categorize and recycle waste efficiently.",
+    image: "https://images.unsplash.com/photo-1532996122724-e3c354a0b15b?auto=format&fit=crop&q=80&w=1000",
+    tags: ["IoT", "Machine Learning", "Python", "React"],
     github: "#",
     demo: "#",
-    color: "from-blue-600 to-indigo-600"
+    color: "from-green-600 to-emerald-600"
   },
   {
     id: 2,
-    title: "AI SaaS Dashboard",
-    description: "An analytics dashboard for AI models, featuring complex data visualizations and automated reporting.",
-    image: "https://images.unsplash.com/photo-1551288049-bbbda536639a?auto=format&fit=crop&q=80&w=1000",
-    tags: ["React", "D3.js", "Node.js", "PostgreSQL"],
+    title: "Tourist Safety System",
+    description: "A comprehensive safety monitoring platform providing real-time incident response and location tracking for travelers.",
+    image: "https://images.unsplash.com/photo-1488646953014-85cb44e25828?auto=format&fit=crop&q=80&w=1000",
+    tags: ["React Native", "Node.js", "MongoDB", "Auth0"],
     github: "#",
     demo: "#",
-    color: "from-purple-600 to-pink-600"
+    color: "from-orange-600 to-amber-600"
   },
   {
     id: 3,
-    title: "Crypto Wallet v2",
-    description: "A secure, decentralized cryptocurrency wallet supporting multiple chains and real-time swap functionality.",
-    image: "https://images.unsplash.com/photo-1621761191319-c6fb6200404a?auto=format&fit=crop&q=80&w=1000",
-    tags: ["Ether.js", "Solidity", "Tailwind", "Vite"],
+    title: "Offline Social Media",
+    description: "A unique social platform with map integration and offline payment capabilities, designed for connectivity in remote areas.",
+    image: "https://images.unsplash.com/photo-1543269664-76bc3997d9ea?auto=format&fit=crop&q=80&w=1000",
+    tags: ["PWA", "Mapbox", "IndexedDB", "WebPay"],
     github: "#",
     demo: "#",
-    color: "from-emerald-600 to-teal-600"
+    color: "from-blue-500 to-cyan-500"
   },
   {
     id: 4,
-    title: "Real Estate Portal",
-    description: "Premium property listing site with 3D virtual tours and integrated mortgage calculators.",
-    image: "https://images.unsplash.com/photo-1560518883-ce09059eeffa?auto=format&fit=crop&q=80&w=1000",
-    tags: ["Next.js", "Firebase", "Framer Motion", "Maps API"],
+    title: "GPS Vehicle Tracker",
+    description: "An advanced tracking solution for vehicles using GPS hardware chips and a real-time monitoring mobile application.",
+    image: "https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?auto=format&fit=crop&q=80&w=1000",
+    tags: ["GPS", "IoT", "React Native", "Firebase"],
     github: "#",
     demo: "#",
-    color: "from-orange-600 to-red-600"
+    color: "from-zinc-700 to-black"
+  },
+  {
+    id: 5,
+    title: "Crop Detection ML",
+    description: "A machine learning based system to detect crop health and conditions in real-time using computer vision.",
+    image: "https://images.unsplash.com/photo-1560617544-b4f287e85abc?auto=format&fit=crop&q=80&w=1000",
+    tags: ["Machine Learning", "Python", "OpenCV", "Flask"],
+    github: "#",
+    demo: "#",
+    color: "from-yellow-600 to-green-600"
+  }
+];
+
+const participations = [
+  {
+    id: 1,
+    event: "Smart India Hackathon",
+    role: "Full Stack Lead",
+    date: "2023",
+    description: "Developed a secure portal for real-time tracking of medicinal supplies using Blockchain and React.",
+    highlight: "Grand Finalist"
+  },
+  {
+    id: 2,
+    event: "Google Solution Challenge",
+    role: "Backend Contributor",
+    date: "2022",
+    description: "Built scalable APIs for an environmental monitoring system focused on water purity levels.",
+    highlight: "Top 50 Regional"
+  },
+  {
+    id: 3,
+    event: "College Tech Fest (OIST)",
+    role: "Event Organizer",
+    date: "2023",
+    description: "Led the development branch for the college's annual tech symposium website and registration portal.",
+    highlight: "Lead Organizer"
   }
 ];
 
@@ -96,6 +133,7 @@ export default function ProjectsPage() {
                   src={project.image} 
                   alt={project.title}
                   fill
+                  unoptimized={true}
                   sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                   className="object-cover opacity-60 group-hover:opacity-80 transition-all duration-700 group-hover:scale-105"
                 />
@@ -134,6 +172,46 @@ export default function ProjectsPage() {
               </div>
             </motion.div>
           ))}
+        </div>
+
+        {/* Participations Section */}
+        <div className="mt-40">
+          <div className="flex items-center gap-6 mb-16">
+            <h2 className="text-4xl font-black text-white tracking-tighter">PARTICIPATIONS.</h2>
+            <div className="h-[2px] flex-1 bg-zinc-900" />
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            {participations.map((item, index) => (
+              <motion.div
+                key={item.id}
+                initial={{ opacity: 0, x: -20 }}
+                whileInView={{ opacity: 1, x: 0 }}
+                transition={{ delay: index * 0.1 }}
+                viewport={{ once: true }}
+                className="group p-8 bg-zinc-900/20 border border-zinc-900 rounded-[2rem] hover:border-blue-500/50 transition-all duration-500"
+              >
+                <div className="flex justify-between items-start mb-6">
+                  <div className="p-3 bg-zinc-900 rounded-xl text-blue-500">
+                    <FiArrowRight className="w-5 h-5 -rotate-45 group-hover:rotate-0 transition-transform" />
+                  </div>
+                  <span className="text-zinc-600 font-bold text-xs uppercase tracking-widest">{item.date}</span>
+                </div>
+                <h3 className="text-2xl font-black text-white mb-2 group-hover:text-blue-400 transition-colors">
+                  {item.event}
+                </h3>
+                <p className="text-blue-500 text-xs font-black uppercase tracking-widest mb-4">
+                  {item.role}
+                </p>
+                <p className="text-zinc-500 text-sm leading-relaxed mb-6">
+                  {item.description}
+                </p>
+                <div className="inline-block px-4 py-1.5 bg-blue-500/10 border border-blue-500/20 text-blue-400 text-[10px] font-black uppercase tracking-widest rounded-full">
+                  {item.highlight}
+                </div>
+              </motion.div>
+            ))}
+          </div>
         </div>
 
         {/* Footer CTA */}

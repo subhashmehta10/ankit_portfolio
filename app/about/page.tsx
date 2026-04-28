@@ -5,6 +5,18 @@ import Link from "next/link";
 import Image from "next/image";
 import { FiAward, FiBookOpen, FiCode, FiCpu } from "react-icons/fi";
 
+const certifications = [
+  { id: 1, title: "Professional Certificate", issuer: "Tech Institute", date: "2023", image: "/assest/certificate 1.jpeg" },
+  { id: 2, title: "Software Engineering", issuer: "Global Academy", date: "2023", image: "/assest/certificate 2.jpeg" },
+  { id: 3, title: "Full Stack Mastery", issuer: "Dev University", date: "2023", image: "/assest/certificate 3.jpeg" },
+  { id: 4, title: "Cloud Architecture", issuer: "Cloud Pros", date: "2023", image: "/assest/Certificate 4.jpeg" },
+  { id: 5, title: "UI/UX Design", issuer: "Design Hub", date: "2023", image: "/assest/certificate 5.jpeg" },
+  { id: 6, title: "Data Structures", issuer: "Code School", date: "2024", image: "/assest/certificate 6.jpeg" },
+  { id: 7, title: "Advanced React", issuer: "Web Academy", date: "2024", image: "/assest/certificate 7.jpeg" },
+  { id: 8, title: "Machine Learning", issuer: "AI Lab", date: "2024", image: "/assest/certificate 8.jpeg" },
+  { id: 9, title: "System Design", issuer: "Arch Tech", date: "2024", image: "/assest/certificate 9.jpeg" },
+];
+
 export default function AboutPage() {
   return (
     <main className="min-h-screen bg-black">
@@ -169,114 +181,35 @@ export default function AboutPage() {
           {/* Certifications Section */}
           <div className="border-t border-zinc-900 pt-24 mb-32">
             <h2 className="text-4xl font-black text-white mb-16 tracking-tight">Certifications</h2>
-            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {/* Cert 1 */}
-              <div className="bg-zinc-900/20 border border-zinc-800 rounded-3xl overflow-hidden group hover:border-blue-500/30 transition-all duration-500">
-                <div className="aspect-[16/10] bg-zinc-900 relative overflow-hidden">
-                  <div className="absolute inset-0 bg-gradient-to-br from-blue-600/10 to-transparent flex items-center justify-center">
-                    <FiAward className="w-12 h-12 text-zinc-800 group-hover:scale-110 group-hover:text-blue-500 transition-all duration-500" />
+            <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+              {certifications.map((cert, index) => (
+                <motion.div
+                  key={cert.id}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ delay: index * 0.1 }}
+                  viewport={{ once: true }}
+                  className="bg-zinc-900/20 border border-zinc-800 rounded-3xl overflow-hidden group hover:border-blue-500/30 transition-all duration-500"
+                >
+                  <div className="aspect-[16/10] bg-zinc-900 relative overflow-hidden">
+                    <Image 
+                      src={cert.image}
+                      alt={cert.title}
+                      fill
+                      className="object-cover opacity-50 group-hover:opacity-100 group-hover:scale-110 transition-all duration-700"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent" />
                   </div>
-                  <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors" />
-                </div>
-                <div className="p-6">
-                  <h4 className="text-lg font-bold text-white mb-1 truncate">Full Stack Development</h4>
-                  <p className="text-blue-500 text-xs font-bold mb-3 uppercase tracking-wider">Meta • Coursera</p>
-                  <div className="flex items-center justify-between opacity-60">
-                    <p className="text-[10px] italic text-zinc-400">Dec 2023</p>
-                    <span className="text-[10px] font-mono text-zinc-500">AF8-293-XKL</span>
+                  <div className="p-6">
+                    <h4 className="text-lg font-bold text-white mb-1 truncate">{cert.title}</h4>
+                    <p className="text-blue-500 text-xs font-black mb-3 uppercase tracking-wider">{cert.issuer}</p>
+                    <div className="flex items-center justify-between opacity-60">
+                      <p className="text-[10px] italic text-zinc-400">{cert.date}</p>
+                      <FiAward className="w-4 h-4 text-zinc-500" />
+                    </div>
                   </div>
-                </div>
-              </div>
-
-              {/* Cert 2 */}
-              <div className="bg-zinc-900/20 border border-zinc-800 rounded-3xl overflow-hidden group hover:border-purple-500/30 transition-all duration-500">
-                <div className="aspect-[16/10] bg-zinc-900 relative overflow-hidden">
-                  <div className="absolute inset-0 bg-gradient-to-br from-purple-600/10 to-transparent flex items-center justify-center">
-                    <FiAward className="w-12 h-12 text-zinc-800 group-hover:scale-110 group-hover:text-purple-500 transition-all duration-500" />
-                  </div>
-                  <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors" />
-                </div>
-                <div className="p-6">
-                  <h4 className="text-lg font-bold text-white mb-1 truncate">Advanced React & State</h4>
-                  <p className="text-purple-500 text-xs font-bold mb-3 uppercase tracking-wider">Google Cloud</p>
-                  <div className="flex items-center justify-between opacity-60">
-                    <p className="text-[10px] italic text-zinc-400">Oct 2023</p>
-                    <span className="text-[10px] font-mono text-zinc-500">GCT-991-LPO</span>
-                  </div>
-                </div>
-              </div>
-
-              {/* Cert 3 */}
-              <div className="bg-zinc-900/20 border border-zinc-800 rounded-3xl overflow-hidden group hover:border-green-500/30 transition-all duration-500">
-                <div className="aspect-[16/10] bg-zinc-900 relative overflow-hidden">
-                  <div className="absolute inset-0 bg-gradient-to-br from-green-600/10 to-transparent flex items-center justify-center">
-                    <FiAward className="w-12 h-12 text-zinc-800 group-hover:scale-110 group-hover:text-green-500 transition-all duration-500" />
-                  </div>
-                  <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors" />
-                </div>
-                <div className="p-6">
-                  <h4 className="text-lg font-bold text-white mb-1 truncate">UI/UX Fundamentals</h4>
-                  <p className="text-green-500 text-xs font-bold mb-3 uppercase tracking-wider">IBM SkillsBuild</p>
-                  <div className="flex items-center justify-between opacity-60">
-                    <p className="text-[10px] italic text-zinc-400">Jul 2023</p>
-                    <span className="text-[10px] font-mono text-zinc-500">IBM-SK3-001</span>
-                  </div>
-                </div>
-              </div>
-
-              {/* Cert 4 */}
-              <div className="bg-zinc-900/20 border border-zinc-800 rounded-3xl overflow-hidden group hover:border-orange-500/30 transition-all duration-500">
-                <div className="aspect-[16/10] bg-zinc-900 relative overflow-hidden">
-                  <div className="absolute inset-0 bg-gradient-to-br from-orange-600/10 to-transparent flex items-center justify-center">
-                    <FiAward className="w-12 h-12 text-zinc-800 group-hover:scale-110 group-hover:text-orange-500 transition-all duration-500" />
-                  </div>
-                  <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors" />
-                </div>
-                <div className="p-6">
-                  <h4 className="text-lg font-bold text-white mb-1 truncate">Node & Express Backend</h4>
-                  <p className="text-orange-500 text-xs font-bold mb-3 uppercase tracking-wider">FreeCodeCamp</p>
-                  <div className="flex items-center justify-between opacity-60">
-                    <p className="text-[10px] italic text-zinc-400">Mar 2023</p>
-                    <span className="text-[10px] font-mono text-zinc-500">FCC-BE-2023</span>
-                  </div>
-                </div>
-              </div>
-
-              {/* Cert 5 */}
-              <div className="bg-zinc-900/20 border border-zinc-800 rounded-3xl overflow-hidden group hover:border-yellow-500/30 transition-all duration-500">
-                <div className="aspect-[16/10] bg-zinc-900 relative overflow-hidden">
-                  <div className="absolute inset-0 bg-gradient-to-br from-yellow-600/10 to-transparent flex items-center justify-center">
-                    <FiAward className="w-12 h-12 text-zinc-800 group-hover:scale-110 group-hover:text-yellow-500 transition-all duration-500" />
-                  </div>
-                  <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors" />
-                </div>
-                <div className="p-6">
-                  <h4 className="text-lg font-bold text-white mb-1 truncate">AWS Cloud Practitioner</h4>
-                  <p className="text-yellow-500 text-xs font-bold mb-3 uppercase tracking-wider">Amazon Web Services</p>
-                  <div className="flex items-center justify-between opacity-60">
-                    <p className="text-[10px] italic text-zinc-400">Jan 2024</p>
-                    <span className="text-[10px] font-mono text-zinc-500">AWS-CP-1029</span>
-                  </div>
-                </div>
-              </div>
-
-              {/* Cert 6 */}
-              <div className="bg-zinc-900/20 border border-zinc-800 rounded-3xl overflow-hidden group hover:border-cyan-500/30 transition-all duration-500">
-                <div className="aspect-[16/10] bg-zinc-900 relative overflow-hidden">
-                  <div className="absolute inset-0 bg-gradient-to-br from-cyan-600/10 to-transparent flex items-center justify-center">
-                    <FiAward className="w-12 h-12 text-zinc-800 group-hover:scale-110 group-hover:text-cyan-500 transition-all duration-500" />
-                  </div>
-                  <div className="absolute inset-0 bg-black/20 group-hover:bg-transparent transition-colors" />
-                </div>
-                <div className="p-6">
-                  <h4 className="text-lg font-bold text-white mb-1 truncate">MongoDB Developer</h4>
-                  <p className="text-cyan-500 text-xs font-bold mb-3 uppercase tracking-wider">MongoDB University</p>
-                  <div className="flex items-center justify-between opacity-60">
-                    <p className="text-[10px] italic text-zinc-400">Feb 2024</p>
-                    <span className="text-[10px] font-mono text-zinc-500">MDB-AS-772</span>
-                  </div>
-                </div>
-              </div>
+                </motion.div>
+              ))}
             </div>
           </div>
 

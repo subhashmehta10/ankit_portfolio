@@ -9,9 +9,9 @@ export default function SocialSidebar() {
 
   const socials = [
     { name: "GitHub", href: "https://github.com", icon: <FaGithub size={20} />, color: "hover:text-zinc-900 dark:hover:text-white" },
-    { name: "LinkedIn", href: "https://linkedin.com", icon: <FaLinkedinIn size={20} />, color: "hover:text-blue-600" },
+    { name: "LinkedIn", href: "https://www.linkedin.com/in/ankit-kumar-583bb0325", icon: <FaLinkedinIn size={20} />, color: "hover:text-blue-600" },
     { name: "Twitter", href: "https://twitter.com", icon: <FaTwitter size={20} />, color: "hover:text-sky-500" },
-    { name: "Instagram", href: "https://instagram.com", icon: <FaInstagram size={20} />, color: "hover:text-pink-600" },
+    { name: "Instagram", href: "https://www.instagram.com/raj12_155", icon: <FaInstagram size={20} />, color: "hover:text-pink-600" },
   ];
 
   return (
