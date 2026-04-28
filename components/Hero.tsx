@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 import ThreeBackground from './ThreeBackground';
 
 export default function Hero() {
@@ -48,15 +49,12 @@ export default function Hero() {
             
             {/* Main image container */}
             <div className="absolute inset-0 bg-zinc-100 dark:bg-zinc-800/80 rounded-[3rem] sm:rounded-[4rem] overflow-hidden border border-white/50 dark:border-zinc-700 shadow-2xl flex items-center justify-center group transform transition-transform duration-500 hover:-translate-y-2">
-              {/* Fallback pattern */}
-              <div className="absolute inset-0 opacity-20 dark:opacity-10 bg-[radial-gradient(#000_1.5px,transparent_1.5px)] dark:bg-[radial-gradient(#fff_1.5px,transparent_1.5px)] [background-size:24px_24px] pointer-events-none" />
-              
-              {/* Avatar/Icon Placeholder (Replace with actual Image component) */}
-              <div className="relative z-10 w-32 h-32 sm:w-40 sm:h-40 bg-zinc-200 dark:bg-zinc-700 rounded-full flex items-center justify-center shadow-inner group-hover:scale-110 transition-transform duration-500">
-                 <svg className="w-16 h-16 sm:w-20 sm:h-20 text-zinc-400 dark:text-zinc-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1.5} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                </svg>
-              </div>
+              <Image 
+                src="/assest/ankit.jpeg" 
+                alt="Ankit Profile"
+                fill
+                className="object-cover object-[center_15%] group-hover:scale-110 transition-transform duration-700" 
+              />
             </div>
             
             {/* Experience Badge */}

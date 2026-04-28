@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 
 export default function About() {
@@ -9,12 +10,13 @@ export default function About() {
           {/* Image/Visual Part */}
           <div className="flex-1 relative">
             <div className="relative w-full max-w-md mx-auto aspect-square rounded-2xl overflow-hidden shadow-2xl group">
-              {/* This is a placeholder for your actual image */}
-              <div className="absolute inset-0 bg-zinc-100 dark:bg-zinc-800 flex items-center justify-center">
-                 <svg className="w-24 h-24 text-zinc-300 dark:text-zinc-600 group-hover:scale-110 transition-transform duration-500" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                </svg>
-              </div>
+              {/* Product Profile Image */}
+              <Image 
+                src="/assest/ankit.jpeg" 
+                alt="Ankit Profile"
+                fill
+                className="object-cover object-[center_15%] group-hover:scale-105 transition-transform duration-700"
+              />
               <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
             </div>
             

@@ -68,7 +68,7 @@ export default function Footer() {
 
         <div className="pt-8 border-t border-zinc-900 flex flex-col md:flex-row justify-between items-center gap-4">
           <p className="text-zinc-600 text-sm italic">
-            © 2026 Ankit. All rights reserved.
+            © {currentYear} Ankit. All rights reserved.
           </p>
           <Link
             href="/admin"

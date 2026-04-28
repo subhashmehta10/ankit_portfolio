@@ -2,6 +2,7 @@
 
 import { motion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 import { FiAward, FiBookOpen, FiCode, FiCpu } from "react-icons/fi";
 
 export default function AboutPage() {
@@ -45,15 +46,13 @@ export default function AboutPage() {
             className="relative flex justify-center lg:justify-end"
           >
             <div className="relative w-full max-w-[300px] aspect-[4/5] bg-zinc-900 rounded-[2rem] overflow-hidden shadow-2xl border border-zinc-800 transform rotate-[-3deg] hover:rotate-0 transition-transform duration-500">
-              {/* This is a placeholder for your actual photo from the image */}
-              <div className="absolute inset-0 bg-gradient-to-tr from-zinc-950 to-zinc-900 flex items-center justify-center p-12">
-                <div className="text-center">
-                   <svg className="w-24 h-24 text-zinc-800 mx-auto mb-4" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z" />
-                  </svg>
-                  <p className="text-zinc-700 font-bold uppercase tracking-widest text-sm">Profile Image</p>
-                </div>
-              </div>
+              <Image 
+                src="/assest/ankit.jpeg" 
+                alt="Ankit Kumar"
+                fill
+                priority
+                className="object-cover object-[center_15%]"
+              />
               <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent" />
             </div>
           </motion.div>
