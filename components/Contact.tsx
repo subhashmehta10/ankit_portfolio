@@ -53,7 +53,7 @@ export default function Contact() {
               </div>
               <div>
                 <h4 className="text-lg font-bold text-white mb-2">Location</h4>
-                <p className="text-zinc-500 text-sm font-medium">Ratnagiri, Bhopal, MP, India</p>
+                <p className="text-zinc-500 text-sm font-medium">Patel Nagar Bhopal, 462022</p>
               </div>
             </div>
           </div>
