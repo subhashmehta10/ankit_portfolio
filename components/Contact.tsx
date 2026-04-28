@@ -33,7 +33,7 @@ export default function Contact() {
               </div>
               <div>
                 <h4 className="text-lg font-bold text-white mb-2">Email Me</h4>
-                <p className="text-zinc-500 text-sm font-medium">kumarmehta172@gmail.com</p>
+                <p className="text-zinc-500 text-sm font-medium">ankitmahi2020@gmail.com</p>
               </div>
             </div>
 
@@ -43,7 +43,7 @@ export default function Contact() {
               </div>
               <div>
                 <h4 className="text-lg font-bold text-white mb-2">Call Me</h4>
-                <p className="text-zinc-500 text-sm font-medium">+91 7322986294</p>
+                <p className="text-zinc-500 text-sm font-medium">+91 8969537691</p>
               </div>
             </div>
 
